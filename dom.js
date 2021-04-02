@@ -15,6 +15,7 @@ filter.addEventListener('keyup', filterItems);
 
 function addItem(e){
     e.preventDefault();
+    
 
     var newItem = document.getElementById('item').value; //to get input value
 
@@ -31,6 +32,8 @@ function addItem(e){
     li.appendChild(deleteBtn);
 
     itemList.appendChild(li) //add ili to list
+
+    document.getElementById('item').value=''; // to clear text after submit
 
     
 
